@@ -1,0 +1,359 @@
+﻿
+
+.nicebutton  {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.20);
+	background: none;
+	border: none;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	
+	/* Fix extra width padding in IE */
+	_width: 0;
+	overflow: visible;
+}
+
+.nicebutton span {
+	display: block;						/* Prevents :active from working in IE--oh well! */
+	height: 24px;
+	padding-right: 12px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	border: none;
+}
+
+.nicebutton span span {
+	padding-right: 0;
+	padding-left: 12px;
+	line-height: 24px;
+	background-position: left top;
+}
+
+.nicebutton span span span {
+	padding-left: 21px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _background-image: none;		Or just hide icons from the undeserving IE6 */
+	/* _padding-left: 0;					Or just hide icons from the undeserving IE6 */
+}
+
+.nicebutton span span span.after {
+	padding-left: 0px;
+	padding-right: 21px;
+	background-position: right center;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _padding-right: 0;					Or just hide icons from the undeserving IE6 */
+}
+
+.nicebutton:hover span {
+	background-position: right center;
+}
+
+.nicebutton:hover span span {
+	background-position: left center;
+}
+
+.nicebutton:active span {
+	background-position: right bottom;
+}
+
+.nicebutton:active span span {
+	background-position: left bottom;
+}
+
+.nicebutton:active span span span {
+	background-position: left center;
+}
+
+.nicebutton:active span span span.after {
+	background-position: right center;
+}
+
+.nicebutton img {
+	margin-right: 5px;
+	vertical-align: text-top;
+	/* IE6 Hack */
+	_margin-top: 4px;
+	_vertical-align: text-bottom;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _display: none;		Or just hide icons from the undeserving IE6 */
+}
+
+.nicebutton img.after {
+	margin-right: 0;
+	margin-left: 5px;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _margin-left: 0;		Or just hide icons from the undeserving IE6 */
+}
+
+.nicebutton.nicemedium	{ font-size: 15px; }
+.nicebutton.nicelarge	{ font-size: 18px; }
+
+
+/*
+ * Button Skins
+ * 
+ * Additional skins can be added below. The images/skins/ButtonTemplate.psd can be used to create new skins.
+ * Prefix the skin name with "nice" to avoid any potential conflicts with other class names. 
+ */
+
+/* Silver Button Skin (the default skin) */
+
+a.nicebutton:link, a.nicebutton:visited, a.nicebutton:active
+{
+	color: #666;
+	text-decoration: none;
+}
+
+a.nicebutton:hover
+{
+	color: #333;
+	text-decoration: none;
+}
+
+
+.nicebutton,
+.nicebutton.nicesilver {
+	color: #666;
+}
+	
+.nicebutton:hover,
+.nicebutton.nicesilver:hover {
+	color: #333;
+}
+	
+.nicebutton span,
+.nicebutton.nicesilver span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/silver/button_right.gif);
+}
+
+.nicebutton span span,
+.nicebutton.nicesilver span span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/silver/button_left.gif);
+}
+
+/* Orange Button Skin */
+
+.nicebutton.niceorange,
+.nicebutton.niceorange:hover {
+	color: white;
+}
+	
+.nicebutton.niceorange span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/orange/button_right.gif);
+}
+
+.nicebutton.niceorange span span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/orange/button_left.gif);
+}
+
+/* Yellow Button Skin */
+
+.nicebutton.niceyellow,
+.nicebutton.niceyellow:hover {
+	color: #994800;
+}
+	
+.nicebutton.niceyellow span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/yellow/button_right.gif);
+}
+
+.nicebutton.niceyellow span span {
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/yellow/button_left.gif);
+}
+
+
+/* 
+ * Simple Skin Buttons
+ */
+
+.nicebutton.nicesimple { 
+	position: relative; 
+	padding: 5px 10px 5px;
+	font: inherit;
+	font-size: 13px;
+	font-style: normal; 
+	font-weight: bold; 
+	color: #fff;
+	line-height: 1; 
+	background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/skins/simple/awesome-overlay-sprite.png);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	
+	/* Special effects */
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25); 
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5); 
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	
+	/* IE only stuff */
+	border-bottom: 1px solid transparent\9;
+	_background-image: none;
+	
+	/* Cross browser inline block hack - http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/ */
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	*display: inline !important;
+	position: relative;
+	
+	/* Force hasLayout in IE */
+	zoom: 1;
+	
+	/* Disable text selection (Firefox only)*/
+	-moz-user-select: none;
+}
+
+.nicebutton.nicesimple::selection {
+	background: transparent;
+}
+
+.nicebutton.nicesimple:hover {
+	background-position: 0 -50px; 
+	color: #fff;
+}
+
+.nicebutton.nicesimple:active { 
+	background-position: 0 100%; 
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.7); 
+	/* Unfortunately, Safari doesn't support inset yet */
+	-webkit-box-shadow: none;
+	
+	/* IE only stuff */
+	border-bottom: 0\9;
+	border-top: 1px solid #666\9;
+}
+
+.nicebutton.nicesimple span {
+	height: auto;
+	padding-left: 24px;
+	padding-right: 0;
+	background-position: left center;
+	background-repeat: no-repeat;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _padding-left: 0;		Or just hide icons from the undeserving IE6 */
+}
+
+.nicebutton.nicesimple span.after {
+	padding-left: 0;
+	padding-right: 24px;
+	background-position: right center;
+	/* IE6 still requires a PNG transparency fix */ 
+	/* _padding-right: 0;		Or just hide icons from the undeserving IE6 */
+}
+
+/* Simple button colors */
+.nicebutton.nicesimple					{ background-color: #333; }		/* Default */
+.nicebutton.nicesimple.niceblack		{ background-color: #333; }
+.nicebutton.nicesimple.nicered		{ background-color: #a90118; }
+.nicebutton.nicesimple.niceorange	{ background-color: #ff8a00; }
+.nicebutton.nicesimple.niceyellow	{ background-color: #ffb515; }
+.nicebutton.nicesimple.nicegreen		{ background-color: #59a901; }
+.nicebutton.nicesimple.niceblue		{ background-color: #015ea9; }
+.nicebutton.nicesimple.niceteal		{ background-color: #2daebf; }
+.nicebutton.nicesimple.nicemagenta	{ background-color: #a9014b; }
+.nicebutton.nicesimple.nicepurple	{ background-color: #9d01a9; }
+.nicebutton.nicesimple.nicelo	{ background-color: #8b00c5; }
+
+.nicebutton.nicesimple.nicegray	{ background-color: #666666; }
+
+/* Simple button sizes */
+.nicebutton.nicesimple.nicesmall          { padding: 4px 7px 5px; font-size: 10px; }
+.nicebutton.nicesimple.nicesmall:active   { padding: 5px 7px 4px; }
+.nicebutton.nicesimple                    { /* default */ }
+.nicebutton.nicesimple:active             { padding: 6px 10px 4px; }
+.nicebutton.nicesimple.nicemedium         { /* default */ }
+.nicebutton.nicesimple.nicemedium:active  { padding: 6px 10px 4px; }
+.nicebutton.nicesimple.nicelarge          { padding: 8px 14px 8px; font-size: 14px; }
+.nicebutton.nicesimple.nicelarge:active   { padding: 9px 14px 7px; }
+.nicebutton.nicesimple.nicexl             { padding: 8px 14px 8px; font-size: 16px; }
+.nicebutton.nicesimple.nicexl:active      { padding: 9px 14px 7px; }
+.nicebutton.nicesimple.nicexxl            { padding: 8px 14px 8px; font-size: 20px; }
+.nicebutton.nicesimple.nicexxl:active     { padding: 9px 14px 7px; }
+.nicebutton.nicesimple.nicexxxl           { padding: 8px 14px 8px; font-size: 26px; }
+.nicebutton.nicesimple.nicexxxl:active    { padding: 9px 14px 7px; }
+
+
+/*
+ * Icon Definitions
+ */
+
+/* Silk Icons - http://www.famfamfam.com/lab/icons/silk/ */
+/* (Obviously not all Silk icons are defined here. Feel free to define any other icons that you may need.) */
+
+.nicebutton span.lock				{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/lock.png); }
+.nicebutton span.suit       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/user_suit.png); }
+.nicebutton span.table       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/table.png); }
+.nicebutton span.time       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/time.png); }
+
+.nicebutton span.content       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/layout_edit.png); }
+
+.nicebutton span.pdf       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/page_white_acrobat.png); }
+.nicebutton span.music       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/music.png); }
+.nicebutton span.musicplay       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/control_play.png); }
+
+.nicebutton span.movie       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/film.png); }
+.nicebutton span.movieplay       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/film_start.png); }
+.nicebutton span.moviesave       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/film_save.png); }
+
+.nicebutton span.sites       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/page_white_database.png); }
+.nicebutton span.reports       { background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/application_view_detail.png); }
+
+.nicebutton span.ok				{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/tick.png); }
+.nicebutton span.cancel			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/cross.png); }
+.nicebutton span.add				{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/add.png); }
+.nicebutton span.delete			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/delete.png); }
+.nicebutton span.download		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/arrow_down.png); }
+.nicebutton span.download2		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/package_down.png); }
+.nicebutton span.upload			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/arrow_up.png); }
+.nicebutton span.search			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/magnifier.png); }
+.nicebutton span.find			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/find.png); }
+.nicebutton span.first			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/resultset_first.png); }
+.nicebutton span.prev			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/resultset_previous.png); }
+.nicebutton span.next			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/resultset_next.png); }
+.nicebutton span.last			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/resultset_last.png); }
+.nicebutton span.play			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/play_blue.png); }
+.nicebutton span.pause			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/pause_blue.png); }
+.nicebutton span.rewind			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/rewind_blue.png); }
+.nicebutton span.forward		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/forward_blue.png); }
+.nicebutton span.stop			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/stop_blue.png); }
+.nicebutton span.reload			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/reload.png); }
+.nicebutton span.sync			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/arrow_refresh.png); }
+.nicebutton span.save			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/disk.png); }
+.nicebutton span.email			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/email.png); }
+.nicebutton span.print			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/printer.png); }
+.nicebutton span.heart			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/heart.png); }
+.nicebutton span.like			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/thumb_up.png); }
+.nicebutton span.dislike		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/thumb_down.png); }
+.nicebutton span.accept			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/accept.png); }
+.nicebutton span.decline		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/decline.png); }
+.nicebutton span.help			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/help.png); }
+.nicebutton span.home			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/house.png); }
+.nicebutton span.info			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/information.png); }
+.nicebutton span.cut				{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/cut.png); }
+.nicebutton span.copy			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/page_white_copy.png); }
+.nicebutton span.paste			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/paste_plain.png); }
+.nicebutton span.erase			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/erase.png); }
+.nicebutton span.undo			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/arrow_undo.png); }
+.nicebutton span.redo			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/arrow_redo.png); }
+.nicebutton span.edit			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/pencil.png); }
+.nicebutton span.calendar		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/date.png); }
+.nicebutton span.user			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/user.png); }
+.nicebutton span.settings		{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/cog.png); }
+.nicebutton span.cart			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/cart.png); }
+.nicebutton span.wand			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/wand.png); }
+.nicebutton span.wrench			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/icons/silk/wrench.png); }
+
+
+.nicebutton span.wait			{ background-image: url(//s3-us-west-2.amazonaws.com/ctg-public-content/images/wait.gif); }
+

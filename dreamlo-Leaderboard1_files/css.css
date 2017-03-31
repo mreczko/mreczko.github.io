@@ -1,0 +1,77 @@
+.divMenuSignin a
+{
+color:#8b00c5;
+}
+
+.divNav a
+{
+color:#000;
+text-decoration:none;
+font-family:arial;font-size:24px;
+}
+
+.dreamloLBTable
+{
+  width:100%;
+  border-collapse: collapse;
+  text-align:center;
+}
+
+.dreamloLBTable th
+{
+  border-bottom:1px solid #eee;
+  padding: 4px;
+  margin: 0px;
+  font-weight:bold;
+}
+
+.dreamloLBTable td
+{
+  border-bottom:1px solid #eee;
+  padding: 4px;
+  margin: 0px;
+}
+
+
+.divContainer 
+{
+  font-family:arial,sans-serif;
+  font-size:12px;
+}
+
+#divWrapper {
+   width:960px;
+}
+
+#divHeader
+{
+
+}
+
+body {
+background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+/* IE10 */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #DDDDDD 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #DDDDDD 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #DDDDDD 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, lefttop, left bottom, color-stop(0, #FFFFFF), color-stop(1, #DDDDDD));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #DDDDDD 100%);
+
+/* Proposed W3C Markup */ 
+background-image: linear-gradient(top, #FFFFFF 0%, #DDDDDD 100%);
+
+}
+
+.locolor {color:#8b00c5;};

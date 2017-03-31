@@ -1,0 +1,514 @@
+﻿body 
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    height:100%;
+}
+
+#divWrapper
+{
+    /* width:960px; */
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#divHeader
+{
+    padding:5px;
+    color:#2b2b2b;
+    font-size:13px;
+}
+
+.divUserMenu b
+{
+    color:#999;
+}
+
+.divUserMenu a, .divMenuLogin a, .divMenuSignin a
+{
+    color: #bbb;
+    text-decoration:none;
+}
+
+.divUserMenu a:hover, .divMenuLogin a:hover, .divMenuSignin a:hover
+{
+    color:#000;
+    text-decoration:underline;
+}
+
+.divUserMenu ul, .divMenuSignin ul, .divMenuLogin ul
+{
+    margin: 0;
+    padding:0px;
+    float:right;
+}
+
+.divUserMenu li, .divMenuSignin li, .divMenuLogin li
+{
+    list-style-type: none;
+    float:left;
+	padding: 0 0 0 10px;
+}
+
+
+#divHeader .divider
+{
+    filter:alpha(opacity=40); 
+   -moz-opacity: 0.4; 
+   opacity: 0.4; 
+}
+
+.divGreeting
+{
+    display:inline;
+}
+
+.greetingName
+{
+    font-weight:bold;
+}
+
+#divContent
+{
+}
+
+.divContainer
+{
+    -moz-border-radius: 1em;
+border-radius: 1em;
+border:1px solid #ddd;
+
+background-color:#fff;;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom:5px;
+}
+
+#divFooter
+{
+    margin-top:10px;
+   /* border-top:1px solid #ddd; */
+    padding-top:2px;
+}
+
+form
+{
+    margin: 0px;
+    padding:0px;
+}
+
+input { outline:none; transition: all 0.25s ease-in-out; -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; border:1px solid #777777; } 
+input:focus { box-shadow: 0 0 5px #00aa00; -webkit-box-shadow: 0 0 5px #00aa00; -moz-box-shadow: 0 0 5px #00aa00;  }
+
+input.date {
+	width: 100px;
+	color: #000;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+  }
+  input[type=radio] {
+    bottom: 2px;
+  }
+  
+input[type=text], input[type=password]
+{
+border: 1px solid #999;
+ color: #444;	
+ width:200px;
+margin-top: 2px;
+margin-bottom: 5px;
+padding:6px;
+font-size:16px;
+}
+
+select
+{
+border: 1px solid #999;
+ color: #444;	
+ width:200px;
+margin-top: 2px;
+margin-bottom: 5px;
+padding:6px;
+font-size:16px;
+}
+
+textarea
+{
+border: 1px solid #999;
+ color: #444444;	
+ width: 400px;
+	height: 200px;
+margin-top: 2px;
+margin-bottom: 5px;
+padding-left: 2px;
+padding-right: 2px;
+}
+
+.ShortTextArea
+{
+    height:100px;
+}
+
+
+.BigTextArea
+{
+    width:600px;
+    height:400px;
+}
+
+h1, h2, h3, h4 {display: inline; margin:0px; padding:0px;}
+
+
+
+.divSignupForm, .divLoginForm
+{
+    -moz-border-radius: 1em;
+border-radius: 1em;
+border:1px solid #ddd;
+padding:10px;
+background-color:#eee;
+}
+
+.divSignupForm td
+{
+    padding-top:5px;
+}
+
+.divSignupForm h2
+{
+    padding-left: 2px;
+}
+
+.divAdminForm td
+{
+    padding-top:5px;
+}
+
+.divAdminForm h2
+{
+    padding-left: 2px;
+}
+
+.divUserMenu 
+{
+    display:inline;
+}
+
+.divMenuLogin
+{
+    display:inline;
+}
+
+
+
+
+
+.ErrorBox
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: red;
+	background-color: #ffeeee;
+	width: 700px;
+-moz-border-radius: 1em;
+border-radius: 1em;
+padding:10px;
+}
+
+.ErrorBox td
+{
+   padding: 4px;
+}
+
+
+.SimpleTable 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.SimpleTableFullWidth
+{
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+}
+
+.PageHeader
+{
+    background-color: #2b2b2b;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius:6px;
+    -moz-border-radius: 6px;
+}
+
+.AdminHeader
+{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius:6px;
+    -moz-border-radius: 6px;
+}
+
+.AdminText
+{
+    padding:10px;
+     border-bottom: 1px solid #ccc;
+}
+
+.ResultsHeader 
+{
+	background-color: #2b2b2b;
+	height: 25px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+}
+
+.ResultsHeader td
+{
+    padding:10px;
+}
+
+.ResultsItem td
+{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.ResultsItemAlt
+{
+    background-color: #eeeeee;
+}
+
+.ResultsItemAlt td
+{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.ItemListImage
+{
+    height:128px;
+    border:none;
+}
+
+.ItemDetailImage
+{
+    border:none;
+}
+
+.ItemListItem
+{
+    padding:6px;
+    background-color:#eee;
+    border-radius: 10px;
+/*box-shadow: 0px 0px 2px #666; */
+border: 1px solid #eee;
+}
+
+.ForumTopicContainer 
+{
+    margin-bottom: 30px;
+}
+
+.ForumTopicDisplayContainer
+{
+    margin-bottom: 20px;
+}
+
+.ForumPostContainer 
+{
+     margin-bottom: 20px;
+}
+
+.ForumTopicImageContainer
+{
+    float: left;
+    padding-right: 10px;
+    height:80px;
+}
+
+.ForumTopicImageContainer img
+{
+    border: none;
+}
+
+.ForumTopicName
+{
+    font-size:24px;
+}
+
+.ForumPostTitle
+{
+    font-size:16px;
+    font-weight:bold;
+}
+
+
+
+.ForumTopicDisplaySubscription
+{
+    background-color: #eee; 
+    /* border: 1px solid #ccc; */
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    width:210px;
+}
+
+.ForumTopicDisplayName
+{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.ForumThreadAddPrompt
+{
+    font-weight:bold;
+    font-size:18px;
+}
+
+.ForumSep
+{
+    color: #aaa;
+    display:inline;
+}
+
+.ForumPostUserName 
+{
+    color: #000;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+}
+
+.ForumTopicDescription, ForumTopicDisplayDescription
+{
+    color: #888;
+}
+
+.ForumPostListHeader 
+{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    background-color:#333;
+    padding:10px;
+}
+
+
+.ForumPostText
+{
+    color: #222;
+    font-size:14px;
+}
+
+.ForumTopicPostInfo, .ForumTopicDisplayPostInfo
+{
+    color: #888;
+    font-size: 10px;
+}
+
+.ForumTopicDateInfo, .ForumTopicDisplayDateInfo
+{
+     color: #888;
+    font-size: 10px;
+}
+
+.ForumPostPostInfo
+{
+    font-size:16px;
+    text-align:center;
+}
+
+
+.ForumPostDisplayTitle
+{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.ForumPostDisplayDescription
+{
+    font-size:16px;
+}
+
+.ForumPostDisplayAuthor
+{
+    border-top: 1px solid #eee;
+    color: #888;
+    margin-top: 10px;
+    padding-top: 4px;
+}
+
+.ForumPostDisplayAuthor b
+{
+    color:#000;
+}
+
+.ForumReplyContainer
+{
+    border-radius: 1em;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+}
+
+.ForumReplyAuthor
+{
+    border-top: 1px solid #eee;
+    color: #888;
+    margin-top: 10px;
+    padding-top: 4px;
+}
+
+.ForumReplyAuthor b
+{
+    color:#000;
+}
+
+
+
+.ForumReplyText
+{
+    font-size: 14px;
+}
+
+
+
